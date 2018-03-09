@@ -3,10 +3,14 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchPost, deletePost } from "../actions";
 import MethodLogger from "../util-decorators/logger";
+import { withRouter } from 'react-router';
 
+// Router properties on props
+// @withRouter()
 @connect(
   (state, ownProps) => ({
     post: state.posts[ownProps.match.params.id],
+    pushTo: state.pushTo
   }), 
   { 
     fetchPost,

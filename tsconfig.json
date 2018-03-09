@@ -7,8 +7,6 @@
         "src/**/*"
     ],
     "exclude": [
-        "empty.ts",
-        "node_modules",
-        "**/*.spec.ts"
+        "node_modules"
     ]
 }
