@@ -9,8 +9,7 @@ import { withRouter } from 'react-router';
 // @withRouter()
 @connect(
   (state, ownProps) => ({
-    post: state.posts[ownProps.match.params.id],
-    pushTo: state.pushTo
+    post: state.posts[ownProps.match.params.id]
   }), 
   { 
     fetchPost,
